@@ -45,7 +45,7 @@ Perform mathematical operations on numeric values.
 | `++` | Increment | `let x = 5; x++;` | `6` |
 | `--` | Decrement | `let x = 5; x--;` | `4` |
 
-![Arithematci](/images/arithem.jpg)
+![Arithematci](images/arithem.jpg)
 
 
 > ⚠️ **Important**: Pre vs Post increment/decrement
