@@ -46,6 +46,8 @@ while(num>0){
   let digit = num%10;
   reverse = reverse*10 + digit;
   console.log(reverse)
+  num = Math.floor(num/10)
+  console.log(reverse)
 }
 
 console.log("end")

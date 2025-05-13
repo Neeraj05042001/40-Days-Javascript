@@ -4,7 +4,7 @@
 
 Control flow is the order in which the computer executes statements in a program. JavaScript provides several structures that control the flow of your code based on different conditions, allowing you to make decisions in your programs.
 
->**`NOTE:`** Control flow gives the ability to skip the execution of few lines of code which we don't need once the truthy value is encountered. It means that once it encounters a truth value it then executes upto that only line and skip the remaing line of code of that particular block.
+>**`NOTE:`** Control flow gives the ability to skip the execution of few lines of code which we don't need once the truthy value is encountered. It means that once it encounters a truth value it then executes up to that only line and skip the remaining line of code of that particular block.
 ## 🔍 if-else Statements
 
 The `if-else` statement is a fundamental control structure that lets your code make decisions based on conditions.

@@ -1,8 +1,11 @@
-<div style="text-align: center; font-size: 0.9em; opacity: 0.6;">
-  🚀🌞DAY-01 : Introduction to Javascript ✅🌐
+# <div align="center">✨ DAY - 01 : Introduction to Javascript🚀 ✨</div>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Level-Beginner-brightgreen" alt="Level: Beginner"/>
 </div>
 
-# 🚀Javascript ✅
+<br>
 
 
 
@@ -138,7 +141,7 @@ Perfect for scripts that need access to the DOM but should **not block HTML pars
 
 ---
 
-<div align="center" style="background: linear-gradient(135deg, #f0f4f8 0%, #e2ecf3 100%); padding: 30px; border-radius: 16px; margin-top: 50px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); max-width: 700px;">
+<div align="center" justify="center" style="background: linear-gradient(135deg, #f0f4f8 0%, #e2ecf3 100%); padding: 30px; border-radius: 16px; margin-top: 50px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); max-width: 700px;">
 
   <h3 style="color: #2c3e50; font-size: 22px; font-weight: 700; margin-bottom: 20px;">
     🚀 <i>Let's Connect & Level Up Together</i>

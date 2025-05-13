@@ -25,13 +25,24 @@ console.log(annualSalary);
 const color = "Red";
 console.log(color === "Red" ? "STOP" : "GO");
 
-// TODO Question 5:
+// TODO Question 5: Create an Electricity Bill Calculator
 
-const units = 50;
-const monthlyCharges = units * 150; //one month charge
-const annualCharge = monthlyCharges * 12 - (20 / 100) * (monthlyCharges * 12); //yearly charge after 20% discount
-console.log(monthlyCharges);
-console.log(annualCharge);
+// const units = 50;
+// const monthlyCharges = units * 150; //one month charge
+// const annualCharge = monthlyCharges * 12 - (20 / 100) * (monthlyCharges * 12); //yearly charge after 20% discount
+// console.log(monthlyCharges);
+// console.log(annualCharge);
+
+const unitsPerDay = 10;
+const costPerUnit = 150;
+const daysInMonth = 30;
+const monthlyBill = daysInMonth * unitsPerDay * costPerUnit;
+
+const annualBillWithoutDiscount = monthlyBill * 12;
+
+const discount = annualBillWithDiscount * 0.2;
+const annualBillWithDiscount = annualBillWithoutDiscount - discount;
+
 
 // TODO Question 6:
 
@@ -60,8 +71,8 @@ const count = 5;
  *  5/2 = 2 remainer(1)
  * 2/2 = 1 remainder(0)
  * 1/2 = 0 remaineder (1)
- *  the binary of 5 = 101 
- * 
- * 1*(2**0)+0*(2**1)+ 1*(2**2) 
+ *  the binary of 5 = 101
+ *
+ * 1*(2**0)+0*(2**1)+ 1*(2**2)
  * **/
-console.log(count<<1)
+console.log(count << 1);

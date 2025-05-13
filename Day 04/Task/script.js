@@ -120,9 +120,9 @@ switch (month) {
 
 // TODO     Question 6: Which Triangle?
 
-let p = 10;
-let q = 10;
-let r = 10;
+const p = 10;
+const q = 10;
+const r = 10;
 
 if (p === q && q === r) {
   console.log("Equilateral Triangle");
