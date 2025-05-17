@@ -1,0 +1,12 @@
+#toggle-div{
+    border: 2px solid red;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0 5%;
+    font-size: 40px;
+}
+
+
+.hidden{
+    display: none;
+}

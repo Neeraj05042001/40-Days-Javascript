@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 2: Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Project 2: Task Manager</h1>
+
+    <hr />
+
+    <div id="task-manager">
+      <input type="text" id="input" placeholder="Type Your Task Here...." />
+      <button id="add-btn" onclick="addTask()">Add Task</button>
+
+      <input type="text" id="search" placeholder="Search task..." onkeyup="searchFilter()"/>
+      <ol id="task-div">
+
+      </ol>
+    </div>
+  </body>
+</html>

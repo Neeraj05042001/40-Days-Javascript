@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 40px;
+}
+h1{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+#task-manager {
+    padding: 40px;
+    margin-left: 35%;
+    margin-right: 30%;
+    
+    
+}
+#input{
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid blue;
+
+}
+#input search::placeholder{
+    font-size: 
+    5px;
+}
+
+#add-btn{
+    padding: 20px;
+     border-radius: 5px;
+     background-color: rgb(65, 242, 65);
+     font-size: 15px;
+     font-weight: 600;
+
+}
+#search{
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid blue;
+
+}
+.btn{
+    padding: 20px;
+}
+li{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
+.task-completed{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
