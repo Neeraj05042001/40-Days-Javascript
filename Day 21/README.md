@@ -6,9 +6,8 @@ An interactive, timed **Quiz Game** built using **HTML**, **CSS**, and **JavaScr
 
 ## 🌐 Live Demo
 
-🚀 **Check out the Live App on Vercel**:  
-👉 [https://your-vercel-project-link.vercel.app](https://your-vercel-project-link.vercel.app)  
-_(Replace with your actual Vercel URL)_
+🚀 **Check out the Live App on Vercel**:  👉 [Quiz Time App](https://40-days-javascript.vercel.app/)  
+
 
 ---
 
@@ -27,19 +26,17 @@ _(Replace with your actual Vercel URL)_
 
 ## 📸 Screenshots
 
-> Replace the image paths with your actual screenshots once available.
-
 ### 🏠 Home / Quiz Screen
-![Quiz Screen](./screenshots/quiz-screen.png)
+![Quiz Screen](./images/image%201.png)
 
 ### ✅ Correct Answer Highlighted
-![Correct Answer](./screenshots/correct-answer.png)
+![Correct Answer](./images/img%202.png)
 
 ### ❌ Wrong Answer Highlighted
-![Wrong Answer](./screenshots/wrong-answer.png)
+![Wrong Answer](./images/img%203.png)
 
 ### 🏁 Final Result Screen
-![Result Screen](./screenshots/result-screen.png)
+![Result Screen](./images/img%204.png)
 
 ---
 
@@ -62,9 +59,9 @@ _(Replace with your actual Vercel URL)_
 
 ## 📦 Tech Stack
 
-- **HTML5**: Markup and structure
-- **CSS3**: Styling and layout
-- **JavaScript (Vanilla)**: Functionality and logic
+- **`HTML5`**: Markup and structure
+- **`CSS3`**: Styling and layout
+- **`JavaScript (Vanilla)`**: Functionality and logic
 
 ---
 
@@ -84,36 +81,40 @@ _(Replace with your actual Vercel URL)_
 
 ---
 
-## 🛠️ Setup Instructions
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/quiz-game.git
-   cd quiz-game
 
-2. **Open in browser**
+## 👨‍💻 Author
 
->- Just open index.html in any modern browser.
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2196F3&center=true&vCenter=true&width=435&lines=Hi+there!+I'm+Neeraj+%F0%9F%91%8B;Welcome+to+my+project!" alt="Typing SVG" />
+</div>
 
->- No dependencies, no build tools needed!
+<br>
 
-🧠 Sample Questions
-The game uses a few sample questions like:
-```js
-{
-  question: "What does DOM stand for?",
-  options: [
-    "Document Order Model",
-    "Document Object Model",
-    "Data Object Method",
-    "Direct Object Management"
-  ],
-  correct: 1
-}
-```
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/Neeraj05042001.png" width="100px" style="border-radius: 50%;" alt="Neeraj"/>
+      <br>
+      <strong>Neeraj Kumar</strong>
+      <br>
+      <em>Full Stack Developer</em>
+    </td>
+  </tr>
+</table>
 
-# 🙋‍♂️ Author
-Neeraj
-🔗 LinkedIn
-🐦 X (Twitter)
-💻 GitHub
+<div align="center">
+  
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/neeraj-kumar1904)
+  [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/_19_neeraj)
+  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Neeraj05042001)
+
+</div>
+
+---
+
+<div align="center">
+  <em>"Building solutions, one commit at a time"</em>
+  <br><br>
+  <strong>Let's connect and build something awesome together! 🚀</strong>
+</div>
