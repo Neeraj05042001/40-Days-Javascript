@@ -1089,6 +1089,51 @@ Build a "Color Palette Generator" that:
 
 ---
 
+
+<div align="center" style="background: linear-gradient(135deg, #f0f4f8 0%, #e2ecf3 100%); padding: 30px; border-radius: 16px; margin-top: 50px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); max-width: 700px;">
+
+  <h3 style="color: #2c3e50; font-size: 22px; font-weight: 700; margin-bottom: 20px;">
+    🚀 <i>Let's Connect & Level Up Together</i>
+  </h3>
+
+  <p style="color: #555; font-size: 16px; margin-bottom: 25px;">
+    Follow me for daily <strong>JavaScript tips</strong>, insightful notes, and project-based learning.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 30px;">
+    <a href="https://x.com/@_19_neeraj" style="background-color: #e8f4fd; color: #1da1f2; padding: 10px 20px; border-radius: 8px; font-weight: 600; text-decoration: none;">
+      🔗 X (Twitter)
+    </a>
+    <a href="https://www.linkedin.com/in/neeraj-kumar1904" style="background-color: #e6f1f8; color: #0077b5; padding: 10px 20px; border-radius: 8px; font-weight: 600; text-decoration: none;">
+      💼 LinkedIn
+    </a>
+    <a href="https://t.me/yourchannel" style="background-color: #e1f4fb; color: #0088cc; padding: 10px 20px; border-radius: 8px; font-weight: 600; text-decoration: none;">
+      💬 Telegram
+    </a>
+    <a href="https://www.threads.net/@yourhandle" style="background-color: #f4e6fa; color: #833ab4; padding: 10px 20px; border-radius: 8px; font-weight: 600; text-decoration: none;">
+      🧵 Threads
+    </a>
+  </div>
+
+  <p style="font-size: 16px; color: #2c3e50; margin-bottom: 20px;">
+    🔍 Dive into the full notes on GitHub → 
+    <a href="https://github.com/Neeraj05042001/40-Days-Javascript" style="color: #2980b9; font-weight: bold; text-decoration: none;">
+      40 Days JavaScript
+    </a>
+  </p>
+
+  <p style="font-size: 13px; color: #7f8c8d;">
+    © 2025 • Crafted with ❤️ by <strong style="color: #34495e;">Neeraj</strong>
+  </p>
+</div>
+
+---
+
+<div align="center">
+<p>📆 <em>Next: Day - 19: Master JavaScript Events</em> 📆</p>
+<p>🚀 Happy JavaScript coding! 🚀</p>
+</div>
+
 <div align="center">
     <h3>🚀 Happy DOM Manipulation! 🚀</h3>
     <p>Master these concepts to create dynamic, interactive web experiences.</p>

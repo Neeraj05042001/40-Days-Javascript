@@ -1060,7 +1060,10 @@ The implementation involves:
 
 This technique is used in virtually all high-performance web applications that display large lists, tables, or grids of data.
 
+</details>
+
 ---
+
 
 
 ## Mutation Observer
