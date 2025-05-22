@@ -116,6 +116,7 @@ switch (month) {
   }
   default:
     console.log("Invalid Entry");
+    
 }
 
 // TODO     Question 6: Which Triangle?
