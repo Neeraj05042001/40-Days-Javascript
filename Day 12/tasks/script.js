@@ -89,7 +89,20 @@ const bookStore = {
   },
 };
 
-
-
 // const { selfHelp:{title:selfHelpTitle, author:selfHelpAuthor,price:selfHelpPrice, quantity:selfHepQuantity}} = bookS;
 
+//TODOD QUESTION NOTEN1: Create an object called book with properties for title , author , and year . Then add a new property genre , modify the year , and delete the author property.
+
+const book = {
+  title: "Atomic Habits",
+  author: "Neeraj",
+  year: "2000",
+};
+
+book.genre = "Self-Help";
+book.year = "2025";
+delete book.author;
+
+console.log(book)
+
+// TODO QUESTION NOTES 2: 
