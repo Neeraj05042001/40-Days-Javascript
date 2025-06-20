@@ -119,3 +119,7 @@ Perfect for scripts that need access to the DOM but should **not block HTML pars
 | Critical early scripts       | Avoid blocking `<head>`|
 
 ---
+
+
+---
+
