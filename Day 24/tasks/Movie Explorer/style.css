@@ -147,6 +147,7 @@ body {
   margin-top: -110px;
   border-radius: 1rem;
   display: flex;
+ 
   justify-content: space-between;
   /* padding: 1rem; */
   background-color: #16181f;
@@ -239,6 +240,10 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
   margin-top: -900px;
+  /* padding-top: 900px; */
+  
+
+  /* top: 0; */
   margin-left: 7%;
   /* background-color: pink; */
 

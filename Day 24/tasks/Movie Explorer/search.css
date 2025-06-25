@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --container-width: 1200px;
+  --container-padding: 1rem;
+  --bg-color: #0d0d0d;
+  --text-color: #ffffff;
+  --accent-color: #e50914; /* Netflix-like red */
+  --icon-color: #9f9fa1;
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-width: 100%;
+}
+#input-box {
+  margin-left: 7%;
+  margin-right: 7%;
+
+  /* width: 100%; */
+  height: 100px;
+  /* background-color: pink; */
+  position: relative;
+  border-radius: 1rem;
+  border: none;
+}
+.input-box {
+  background-color: #252833;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 7%;
+  height: 100%;
+  width: 100%;
+  font-size: 38px;
+  border-radius: 1rem;
+  color: #8f98b2;
+  border: none;
+}
+
+.input-box i {
+  background-color: blue;
+  height: 100px;
+}
+.search-icon {
+  position: absolute;
+
+  left: 3%;
+  top: 25%;
+  font-size: 44px;
+  margin-right: 5%;
+}
+
+#input-box {
+  margin-left: 8%;
+  margin-right: 8%;
+
+  height: 70px;
+  border: none;
+}
+.input-box {
+  padding-left: 12%;
+
+  font-size: 28px;
+  border: none;
+}
+
+.search-icon {
+  position: absolute;
+  left: 3%;
+  top: 25%;
+  font-size: 34px;
+  margin-right: 5%;
+}
+
+#filtered-movie-container {
+  /* background-color: green; */
+  margin-left: 9%;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+.titlec {
+  font-size: 62px;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 700;
+}
+#filter-container {
+  /* background-color: green; */
+  margin-top: 70px;
+  width: 85%;
+  padding-left: 400px;
+}
+#movie-container {
+  width: 80%;
+  display: flex;
+
+  margin-bottom: 20px;
+}
+#left-div {
+  margin-right: 20px;
+}
+
+#poster-img {
+  height: 400px;
+  width: 650px;
+  border-radius: 10px;
+}
+#right-div {
+  padding-top: 65px;
+}
+#right-title {
+  font-size: 38px;
+  font-weight: 600;
+  /* background-color: orange; */
+  width: 440px;
+}
+
+#description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 500;
+  /* background-color: pink; */
+  width: 350px;
+}
+#year {
+  font-size: 18px;
+  /* background-color: red; */
+}
+#whitedot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+#time {
+  font-size: 18px;
+}
+#language {
+  font-size: 18px;
+}
+#rated {
+  font-size: 18px;
+}
+
+.btni {
+  width: 350px;
+  padding: 15px;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+.play-icon {
+  margin-right: 15px;
+}
+.err{
+    font-size: 48px;
+    text-align: center;
+    color: red;
+}
+
+@media (max-width: 1200px) {
+  #input-box {
+    margin-left: 8%;
+    margin-right: 8%;
+
+    height: 70px;
+  }
+  .input-box {
+    padding-left: 12%;
+
+    font-size: 28px;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 3%;
+    top: 25%;
+    font-size: 34px;
+    margin-right: 5%;
+  }
+
+  #filtered-movie-container {
+    /* background-color: green; */
+    margin-left: 9%;
+    margin-top: 20px;
+    /* padding-left: 0px; */
+    /* overflow-x: hidden; */
+  }
+  #filtered-movie-container h2 {
+    font-size: 32px;
+    font-family: sans-serif;
+    margin-left: 2px;
+    /* background-color: pink; */
+  }
+  #filter-container {
+    margin-top: 20px;
+    width: 85%;
+    padding-left: 0px;
+    /* background-color: blue; */
+  }
+  #movie-container {
+    width: 80%;
+    display: flex;
+
+    margin-bottom: 20px;
+  }
+  #left-div {
+    margin-right: 20px;
+  }
+
+  #poster-img {
+    height: 300px;
+    width: 450px;
+    border-radius: 10px;
+  }
+  #right-div {
+    padding-top: 65px;
+  }
+  #right-title {
+    font-size: 38px;
+    font-weight: 600;
+    /* background-color: orange; */
+    width: 440px;
+  }
+
+  #description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 500;
+    /* background-color: pink; */
+    width: 350px;
+  }
+  #year {
+    font-size: 18px;
+    /* background-color: red; */
+  }
+  #whitedot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  #time {
+    font-size: 18px;
+  }
+  #language {
+    font-size: 18px;
+  }
+  #rated {
+    font-size: 18px;
+  }
+
+  .btni {
+    width: 350px;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .play-icon {
+    margin-right: 15px;
+  }
+}

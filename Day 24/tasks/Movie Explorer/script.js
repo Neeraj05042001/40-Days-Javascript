@@ -52,7 +52,7 @@ sidebar.addEventListener("mouseleave", () => {
 sidebarMenus.forEach((item) => {
   //div for storing title & icon
   const sideMenu = document.createElement("div");
-  sideMenu.setAttribute("id", "sideMenu");
+  sideMenu.setAttribute("id", "sideMenu", "ide");
   sideMenu.setAttribute("class", item.title);
 
   //div for title
@@ -267,16 +267,17 @@ const AIRING_TODAY = `${BASE_URL}/tv/airing_today?api_key=${API_KEY}`;
 const ON_THE_AIR = `${BASE_URL}/tv/on_the_air?api_key=${API_KEY}`;
 const POPULAR_TV_SHOW = `${BASE_URL}/tv/popular?api_key=${API_KEY}`;
 const TOP_RATED_SHOW = `${BASE_URL}/tv/top_rated?api_key=${API_KEY}`;
+const MOVIE_COLLECTION = `${BASE_URL}/trending/all/day?api_key=${API_KEY}`;
 
 function movieCards() {
   async function movieData() {
     const response = await fetch(NOW_PLAYING_URL);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     const nowPlayingMoviesList = data.results;
-    console.log(nowPlayingMoviesList);
+    // console.log(nowPlayingMoviesList);
     const psrc = nowPlayingMoviesList[0].poster_path;
-    console.log(psrc);
+    // console.log(psrc);
     const posterURL = `https://image.tmdb.org/t/p/w500${psrc}`;
 
     //creating div for now playing movies
@@ -340,9 +341,9 @@ function movieCards() {
   async function popular() {
     const response = await fetch(POPULAR_URL);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     const nowPlayingMoviesList = data.results;
-    console.log(nowPlayingMoviesList);
+    // console.log(nowPlayingMoviesList);
     // const psrc = nowPlayingMoviesList[0].poster_path;
     // console.log(psrc);
     // const posterURL = `https://image.tmdb.org/t/p/w500${psrc}`;
@@ -387,11 +388,11 @@ function movieCards() {
   async function topRated() {
     const response = await fetch(TOP_RATED_URL);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     const nowPlayingMoviesList = data.results;
-    console.log(nowPlayingMoviesList);
+    // console.log(nowPlayingMoviesList);
     const psrc = nowPlayingMoviesList[0].poster_path;
-    console.log(psrc);
+    // console.log(psrc);
     const posterURL = `https://image.tmdb.org/t/p/w500${psrc}`;
 
     //creating div for now playing movies
@@ -434,11 +435,11 @@ function movieCards() {
   async function upcoming() {
     const response = await fetch(UPCOMING);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     const nowPlayingMoviesList = data.results;
-    console.log(nowPlayingMoviesList);
+    // console.log(nowPlayingMoviesList);
     const psrc = nowPlayingMoviesList[0].poster_path;
-    console.log(psrc);
+    // console.log(psrc);
     const posterURL = `https://image.tmdb.org/t/p/w500${psrc}`;
 
     //creating div for now playing movies
@@ -481,11 +482,11 @@ function movieCards() {
   async function airingToday() {
     const response = await fetch(AIRING_TODAY);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     const nowPlayingMoviesList = data.results;
-    console.log(nowPlayingMoviesList);
+    // console.log(nowPlayingMoviesList);
     const psrc = nowPlayingMoviesList[0].poster_path;
-    console.log(psrc);
+    // console.log(psrc);
     const posterURL = `https://image.tmdb.org/t/p/w500${psrc}`;
 
     //creating div for now playing movies
@@ -528,11 +529,11 @@ function movieCards() {
   async function onTheAir() {
     const response = await fetch(ON_THE_AIR);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     const nowPlayingMoviesList = data.results;
-    console.log(nowPlayingMoviesList);
+    // console.log(nowPlayingMoviesList);
     const psrc = nowPlayingMoviesList[0].poster_path;
-    console.log(psrc);
+    // console.log(psrc);
     const posterURL = `https://image.tmdb.org/t/p/w500${psrc}`;
 
     //creating div for now playing movies
@@ -575,11 +576,11 @@ function movieCards() {
   async function popularTvShow() {
     const response = await fetch(POPULAR_TV_SHOW);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     const nowPlayingMoviesList = data.results;
-    console.log(nowPlayingMoviesList);
+    // console.log(nowPlayingMoviesList);
     const psrc = nowPlayingMoviesList[0].poster_path;
-    console.log(psrc);
+    // console.log(psrc);
     const posterURL = `https://image.tmdb.org/t/p/w500${psrc}`;
 
     //creating div for now playing movies
@@ -622,11 +623,11 @@ function movieCards() {
   async function topRatedTvShow() {
     const response = await fetch(TOP_RATED_SHOW);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     const nowPlayingMoviesList = data.results;
-    console.log(nowPlayingMoviesList);
+    // console.log(nowPlayingMoviesList);
     const psrc = nowPlayingMoviesList[0].poster_path;
-    console.log(psrc);
+    // console.log(psrc);
     const posterURL = `https://image.tmdb.org/t/p/w500${psrc}`;
 
     //creating div for now playing movies
@@ -909,4 +910,24 @@ function movieCards() {
 
 movieCards();
 
-function search() {}
+function search() {
+  const searchBtn = document.querySelector(".Search");
+  async function getData() {
+    try {
+      const response = await fetch(MOVIE_COLLECTION);
+      const data = await response.json();
+      console.log(data);
+
+      const movielist = data.results[0].name;
+      console.log(movielist);
+    } catch {}
+  }
+
+  getData();
+
+  searchBtn.addEventListener("click", function () {
+    window.location.href = "search.html";
+  });
+}
+
+search();

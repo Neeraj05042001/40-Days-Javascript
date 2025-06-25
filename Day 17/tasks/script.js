@@ -44,36 +44,100 @@ cars.forEach((elem, index) => {
 
 // TODO QUESTION 5: Extract and Count Unique Links from a Page
 
-const links = document.querySelectorAll("#hyperlink a");
-const uniqueLinkDisplay = document.getElementById("uniqueLink")
-console.log(links);
+// const links = document.querySelectorAll("#hyperlink a");
+// const uniqueLinkDisplay = document.getElementById("uniqueLink")
+// console.log(links);
 
-const uniqueHref = {};
-// let count = 0;
-links.forEach((elem) => {
-  const href = elem.getAttribute("href");
+// const uniqueHref = {};
+// // let count = 0;
+// links.forEach((elem) => {
+//   const href = elem.getAttribute("href");
 
-  if(href){
-    if(uniqueHref[href]){
-      uniqueHref[href] += 1; 
-    }else{
-      uniqueHref[href] =1;
+//   if(href){
+//     if(uniqueHref[href]){
+//       uniqueHref[href] += 1;
+//     }else{
+//       uniqueHref[href] =1;
+//     }
+//   }
+
+// });
+
+// const ul = document.createElement("ul")
+
+// for( const link in uniqueHref){
+
+// console.log(`${link} has occured ${uniqueHref[link]} times`)
+
+// const li = document.createElement("li")
+// li.textContent = `${link} has occured ${uniqueHref[link]} times`
+
+// ul.appendChild(li)
+// }
+
+// uniqueLinkDisplay.appendChild(ul)
+
+//TODO QUESTION 6: Count all the unique hyperlinks (`<a>`) in a page and display their count.
+
+// function countLink() {
+//   const link = document.getElementsByTagName("a");
+//   const allLinks = [...link];
+//   const allHref = [];
+//   const uniqueLink = [];
+
+//   allLinks.forEach((element) => {
+//     const href = element.getAttribute("href");
+//     allHref.push(href);
+//   });
+
+//   const uniqueLinkContainer = document.getElementById("uniqueLink");
+//   const displayUniqueLink = document.getElementById("unique-link-list");
+//   const countDisplay = document.createElement("h3");
+//   let count = 0;
+
+//   allHref.forEach((hrf) => {
+//     if (!uniqueLink.includes(hrf)) {
+//       uniqueLink.push(hrf);
+//       const li = document.createElement("li");
+//       li.textContent = hrf;
+//       count++;
+
+//       displayUniqueLink.appendChild(li);
+//     }
+//   });
+
+//   countDisplay.textContent = `Total Unique Links: ${count}`;
+//   uniqueLinkContainer.appendChild(countDisplay);
+
+// }
+// countLink();
+
+//todo Alternative
+
+function countLink() {
+  const allLinks =[...document.getElementsByTagName("a")];
+  const uniqueLink = new Set();
+
+  allLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (href) {
+      uniqueLink.add(href);
     }
-  }
+  });
 
-});
+  const uniqueLinkContainer = document.getElementById("uniqueLink");
+  const displayUniqueLink = document.getElementById("unique-link-list");
+  const countDisplay = document.createElement("h3");
+  
 
-const ul = document.createElement("ul")
+  uniqueLink.forEach((href) => {
+    const li = document.createElement("li");
+    li.textContent = href;
 
-for( const link in uniqueHref){
+    displayUniqueLink.appendChild(li);
+  });
 
-console.log(`${link} has occured ${uniqueHref[link]} times`)
-
-const li = document.createElement("li")
-li.textContent = `${link} has occured ${uniqueHref[link]} times`
-
-ul.appendChild(li)
+  countDisplay.textContent = `Total Unique Links: ${uniqueLink.size}`;
+  uniqueLinkContainer.appendChild(countDisplay);
 }
-
-uniqueLinkDisplay.appendChild(ul)
-
+countLink();
