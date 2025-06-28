@@ -97,6 +97,7 @@ body {
   margin-left: 9%;
   margin-top: 20px;
   padding-top: 50px;
+  overflow-x: hidden;
 }
 .titlec {
   font-size: 62px;

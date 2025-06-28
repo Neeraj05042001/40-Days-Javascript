@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 25: Fetch () API</title>
+    <script defer src="script.js"></script>
+  </head>
+  <style>
+      body {
+      font-family: Arial;
+      padding: 2rem;
+    }
+    input, textarea, button {
+      display: block;
+      margin: 1rem 0;
+      width: 300px;
+      padding: 0.5rem;
+    }
+  </style>
+  <body>
+    <h1>Day 25: Fetch () API</h1>
+
+    <input type="text" id="title" placeholder="Post Title" />
+    <textarea id="body" rows="5" placeholder="Post Body"></textarea>
+    <button onclick="createPost()">Submit Post</button>
+    <div id="solution-div">
+        <h2 style="text-align: center;">Title by userId</h2>
+    </div>
+  </body>
+</html>
