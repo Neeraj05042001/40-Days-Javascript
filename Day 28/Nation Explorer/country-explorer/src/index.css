@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+.hover1:hover{
+    transform: scale(1.1);
+}
+.ho:hover{
+   
+     background: linear-gradient(to left, #424a62, #614D87);
+    transition: all 0.5s ease-in-out;
+     
+    
+}
+
+.card-container:hover{
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.75rem) scale(1.03); /* -12px and 105% scale */
+  border-color: rgba(255, 255, 255, 0.2); 
+}
+
+.group:hover .child {
+  opacity: 1;
+}
+
+.group:hover .child {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Tailwind's shadow-xl */
+}
+
+
+/* Main card hover styles */
+.card-container {
+  transition: all 0.5s ease-out;
+  transform: translateY(0) scale(1);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 50px -12px rgba(168, 85, 247, 0.2); /* shadow-2xl purple */
+}
+
+.card-container:hover {
+  transform: translateY(-12px) scale(1.05); /* hover:-translate-y-3 + scale-105 */
+  border-color: rgba(255, 255, 255, 0.2);   /* hover:border-white/20 */
+  box-shadow: 0 25px 50px -12px rgba(168, 85, 247, 0.4); /* hover:shadow-purple-500/40 */
+}
+
+/* Group-hover:opacity-100 effect for the animated border */
+.card-container:hover > .group {
+  opacity: 1;
+}
+
+/* Flag section hover effects */
+.card-container:hover .child {
+  box-shadow: 0 20px 25px -5px rgba(168, 85, 247, 0.2),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl + purple */
+}
+
+.card-container:hover img {
+  transform: scale(1.1);
+  filter: brightness(110%);
+}
+
+/* Explore Button hover effects */
+.group\/btn {
+  transition: all 0.3s ease-out;
+  transform: scale(1) translateY(0);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 15px -3px rgba(168, 85, 247, 0.3);
+}
+
+.group\/btn:hover {
+  transform: scale(1.02) translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 25px -5px rgba(168, 85, 247, 0.5);
+}
+
+.group\/btn:hover > .group-hover\/btn\:opacity-100 {
+  opacity: 1;
+}
+
+.group\/btn:hover .group-hover\/btn\:translate-x-1 {
+  transform: translateX(0.25rem); /* 4px */
+}
+
+.group\/btn:active {
+  transform: scale(0.95);
+}
+
+

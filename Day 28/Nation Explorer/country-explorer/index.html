@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="/src/index.css" rel="stylesheet" />
+    <script defer type="module" src="/src/main.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body class="p-4 " style="background: linear-gradient(to left, #44166B 0%, #10182F 100%)">
+    <div id="header" class="  text-white">
+<div
+  id="logo-container"
+  class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 py-4 px-2 sm:px-4"
+>
+  <!-- 🪪 Logo and Text -->
+  <div id="logo" class="flex items-start sm:items-center gap-3">
+    <img
+      src="https://img.icons8.com/?size=100&id=XsvEZR0h6fav&format=png&color=000000"
+      alt="logo"
+      class="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 object-contain"
+    />
+    <div id="logoDescription" class="space-y-1">
+      <h1 class="text-lg sm:text-2xl md:text-4xl font-black font-serif mt-1 text-white">
+        WorldScope
+      </h1>
+      <div class="flex flex-wrap gap-2 items-center font-bold text-[10px] sm:text-sm md:text-lg text-[#878A99]">
+        <h3>Explore</h3>
+        <div class="bg-[#878A99] h-1 w-1 sm:h-1.5 sm:w-1.5 md:h-2 md:w-2 rounded-full mt-[2px]"></div>
+        <h3>Discover</h3>
+        <div class="bg-[#878A99] h-1 w-1 sm:h-1.5 sm:w-1.5 md:h-2 md:w-2 rounded-full mt-[2px]"></div>
+        <h3>Connect</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- ❤️ Favorites Button -->
+  <div
+    id="favorites"
+    class="flex items-center gap-2 py-2 px-4 sm:py-2 sm:px-6 rounded-2xl text-xs sm:text-sm md:text-lg font-semibold font-serif border border-[#44166B] cursor-pointer hover1 text-white"
+    style="background: linear-gradient(to left, #a457e7 0%, #ba1dc5 100%)"
+  >
+    <i class="fa-regular fa-heart"></i>
+    <h3>Favorites</h3>
+  </div>
+</div>
+
+    <div
+  id="utility"
+  class="mt-8 p-4 rounded-3xl shadow-2xl shadow-indigo-800/40 backdrop-blur-md 
+         bg-gradient-to-l from-[#863d90] via-[#7b52a8] to-[#4a66b9] 
+         border border-white/30 space-y-4 sm:space-y-0 sm:flex sm:flex-col md:flex-row md:justify-between md:items-center gap-4"
+>
+  <!-- 🔍 Search Box -->
+  <div class="flex items-center border border-white/70 rounded-lg px-4 py-2 w-full md:max-w-full">
+    <i class="fa-solid fa-magnifying-glass text-white/80 text-base md:text-xl"></i>
+    <input
+      id="inputSearch"
+      type="text"
+      placeholder="Search countries around the world...."
+      class="ml-3 w-full outline-none font-semibold text-sm md:text-base bg-transparent text-white placeholder-white/70"
+    />
+  </div>
+
+  <!-- 🔘 Filters -->
+  <div id="filters" class="flex md:flex-none flex-wrap justify-start gap-3 sm:gap-5">
+    <!-- 🌍 Region Button -->
+    <button
+      id="region"
+      class="flex gap-2 items-center border border-white/30 px-4 py-2 md:px-6 md:py-3 rounded-2xl text-sm md:text-base font-semibold text-white backdrop-blur-sm"
+    >
+      <img
+        class="h-5 w-5"
+        src="https://img.icons8.com/?size=100&id=3004&format=png&color=ffffff"
+        alt="region"
+      />
+      <span>All Regions</span>
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+
+    <!-- 🔽 Sort Button -->
+    <button
+      id="sort"
+      class="flex gap-2 items-center border border-white/30 px-4 py-2 md:px-6 md:py-3 rounded-2xl text-sm md:text-base font-semibold text-white backdrop-blur-sm"
+    >
+      <i class="fa-solid fa-arrow-trend-up"></i>
+      <span>Sort by Name</span>
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+  </div>
+</div>
+
+    </div>
+
+
+    <div id="body">
+      <div id="countryCard" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-4"></div>
+    </div>
+     
+    </div>
+  </body>
+</html>
