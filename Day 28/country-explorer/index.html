@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="/src/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script defer type="module" src="/src/main.js"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div class="mx-auto p-4">
+      <div class="flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Country Explorer</h1>
+      </div>
+
+      <div class="mt-4 flex flex-col sm:flex-row gap-2">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Enter country name"
+          class="border p-2 rounded w-full sm:w-auto"
+        />
+        <button id="searchBtn" class="bg-blue-500 text-white px-4 py-2 rounded">
+          Search
+        </button>
+      </div>
+
+      <div id="loader" class="hidden mt-4 text-center">Loading...</div>
+      <div id="error" class="hidden mt-4 text-red-500"></div>
+
+      <div id="countryDetails" class="mt-4 space-y-4"></div>
+
+      <div id="map" class="h-64 mt-4"></div>
+    </div>
+  </body>
+</html>
