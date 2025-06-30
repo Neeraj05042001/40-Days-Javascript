@@ -36,14 +36,14 @@
   </div>
 
   <!-- ❤️ Favorites Button -->
-  <div
+  <button
     id="favorites"
     class="flex items-center gap-2 py-2 px-4 sm:py-2 sm:px-6 rounded-2xl text-xs sm:text-sm md:text-lg font-semibold font-serif border border-[#44166B] cursor-pointer hover1 text-white"
     style="background: linear-gradient(to left, #a457e7 0%, #ba1dc5 100%)"
   >
     <i class="fa-regular fa-heart"></i>
     <h3>Favorites</h3>
-  </div>
+</button>
 </div>
 
     <div
@@ -68,14 +68,24 @@
     <!-- 🌍 Region Button -->
     <button
       id="region"
-      class="flex gap-2 items-center border border-white/30 px-4 py-2 md:px-6 md:py-3 rounded-2xl text-sm md:text-base font-semibold text-white backdrop-blur-sm"
+      class="relative cursor-pointer flex gap-2 items-center border border-white/30 px-4 py-2 md:px-6 md:py-3 rounded-2xl text-sm md:text-base font-semibold text-white backdrop-blur-sm"
     >
       <img
         class="h-5 w-5"
         src="https://img.icons8.com/?size=100&id=3004&format=png&color=ffffff"
         alt="region"
       />
-      <span>All Regions</span>
+      <div id="region-container" class="">
+        <span id="filter-title">All Regions</span>
+        <ul id="region-filter" class="region hidden text-left absolute z-2 w-full bg-gray-700 top-10 lg:top-13 left-0 rounded-sm p-2">
+          <li id="options"  class="first-li-all-region px-5 py-1.5">All Regions</li>
+          <li id="options" class="px-5 py-1.5">Africa</li>
+          <li id="options" class="px-5 py-1.5">Americas</li>
+          <li id="options" class="px-5 py-1.5">Asia</li>
+          <li id="options" class="px-5 py-1.5">Europe</li>
+          <li id="options" class="px-5 py-1.5">Oceania</li>
+        </ul>
+      </div>
       <i class="fa-solid fa-angle-down"></i>
     </button>
 
@@ -94,10 +104,31 @@
     </div>
 
 
-    <div id="body">
+    <div id="body " class=" relative -z-1 mt-12 ">
+      <div class="h-px bg-white/20 my-4 w-full mb-8"></div>
+
+     
+
+     
+
+
+<div class="mb-4 w-70 ml-5  px-6 py-2 rounded-2xl border border-white/20 text-white font-medium bg-white/5 backdrop-blur-md shadow-inner flex items-center justify-center space-x-1">
+  <span id="count" class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 font-bold text-lg">250</span>
+  <span class="text-sm text-white/90">Countries Found </span>
+</div>
+
+
+     <div id="search-error" class="hidden mx-auto max-w-md p-5 mt-6 rounded-2xl shadow-xl bg-white/10 backdrop-blur-lg text-white border border-white/20 text-center">
+  <div class="text-3xl mb-2">🚫</div>
+  <h2 class="text-xl font-semibold">No Matching Country</h2>
+  <p class="mt-2 text-sm text-white/80">We couldn't find any country by that name.</p>
+     </div>
       <div id="countryCard" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-4"></div>
     </div>
      
+    
     </div>
   </body>
+
+  
 </html>

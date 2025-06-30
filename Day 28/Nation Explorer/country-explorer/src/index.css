@@ -83,4 +83,8 @@
   transform: scale(0.95);
 }
 
-
+.region li:hover{
+background-color: white;
+color: black;
+border-radius: 3px;
+}
