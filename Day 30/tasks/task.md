@@ -6,10 +6,7 @@ Please complete the following tasks.
 
 ## 1. Create a Book Class
 
-- Create a Book class with properties: title, author, pages.
-- Add a method describe() that logs:
-    "Title: [title], Author: [author], Pages: [pages]"
-- Create at least two book objects and call the describe() method.
+
 
 ## 2. Use Getters and Setters with a Temperature Class
 

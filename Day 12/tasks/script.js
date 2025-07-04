@@ -106,3 +106,4 @@ delete book.author;
 console.log(book)
 
 // TODO QUESTION NOTES 2: 
+
