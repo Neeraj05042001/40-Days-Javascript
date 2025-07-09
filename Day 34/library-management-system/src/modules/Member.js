@@ -1,19 +1,29 @@
-import {User} from "./user.js"
+import { User } from "./user.js";
 
-export class Member extends User{
-    constructor(name, email){
-        super(name, email)
-    }
+const borrowedMap = new WeakMap();
 
-    borrowBook(book){
+export class Member extends User {
+  constructor(name, email) {
+    super(name, email);
+    const borrowedFromStorage =
+      JSON.parse(localStorage.getItem("borrowedBooks")) || [];
+      borrowedMap.set(this, borrowedFromStorage)
+  }
 
-    }
+  borrowBook(book) {
+    const borrowed = borrowedMap.get(this)
+    borrowed.push(book)
+    book.isAvailable= false
+    localStorage.setItem("borrowedBooks", JSON.stringify(borrowed))
+  }
 
-    returnBook(bookId){
+  returnBook(bookId) {}
 
-    }
+  getBorrowedBooks(){
+    return borrowedMap.get(this)
+  }
 
-    getRole(){
-        return "Member"
-    }
+  getRole() {
+    return "Member";
+  }
 }
