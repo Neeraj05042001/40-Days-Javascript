@@ -338,3 +338,5 @@ input.addEventListener("input", (e) => {
   else if (strategy === "throttle") throttledSearch(value);
   else if (strategy === "memoize") memoizedSearch(value);
 });
+
+/**END OF QUESTION FOR DAY 36 */
