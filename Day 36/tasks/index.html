@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 36: Assignment</title>
+    <script defer src="solution.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Day 36: Assignment</h1>
+
+    <div id="character-counter">
+      <h2>Question 1</h2>
+      <textarea name="" id="textArea" placeholder="Start Typing..."></textarea>
+      <h3 id="detail"></h3>
+      <h3 id="warn"></h3>
+    </div>
+    <hr />
+
+    <div id="question2">
+      <h2>Question 2</h2>
+      <h3 id="height"></h3>
+      <h3 id="width"></h3>
+      <h3 id="screen"></h3>
+    </div>
+
+    <div id="temperature">
+      <h2>Question 3: Temperature Converter</h2>
+      <form action="" id="form">
+        <label for="celsius">Temp in celsius:</label>
+        <input type="text" name="" id="celsius" />
+        <button type="submit" id="btn">Calculate</button>
+      </form>
+      <h3 id="fahrenheit"></h3>
+    </div>
+
+    <hr />
+
+    <div id="github">
+      <label for="git-user">GitHub UserName:</label>
+      <input type="text" id="git-user" placeholder="Type userName..." />
+
+      <h3 id="userTitle"></h3>
+      <img id="image" src="" alt="" />
+
+      <h2 id="loader">Loading....</h2>
+    </div>
+
+    <hr />
+
+    <button id="openModal">Open Modal</button>
+
+    <div id="overlay" class="overlay"></div>
+    <div id="modal" class="modal">
+      <p>Modal is open. Press ESC to close.</p>
+      <button id="closeModal">Close</button>
+    </div>
+
+    <hr />
+    <div>
+      <button onclick="sortList()">Sort</button>
+      <button onclick="filterList()">Filter</button>
+      <button onclick="shuffleList()">Shuffle</button>
+      <button onclick="resetList()">Reset</button>
+    </div>
+    <ul id="listContainer"></ul>
+
+    <hr>
+    <select id="strategy">
+  <option value="debounce">Debounce</option>
+  <option value="throttle">Throttle</option>
+  <option value="memoize">Memoization</option>
+</select>
+<input id="searchBox" type="text" placeholder="Type to search..." />
+<div id="result"></div>
+<p id="calls">Function calls: 0</p>
+  </body>
+</html>
