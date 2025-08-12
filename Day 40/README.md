@@ -105,6 +105,6 @@ Simply open `index.html` in your preferred browser.
 **Neeraj Kumar**
 💖 Made with passion for splitting expenses fairly.
 
-📧 **Connect:** [LinkedIn](https://www.linkedin.com/in/neeraj-kumar-6204721b0/) | [GitHub](https://github.com/Neeraj05042001)
+📧 **Connect:** [LinkedIn](https://linkedin.com/in/neeraj-kumar1904) | [GitHub](https://github.com/Neeraj05042001)
 
 ---
